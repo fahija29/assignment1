@@ -1,22 +1,16 @@
 body{
     background-color: white;
 }
-   /* Reset */
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-
 body{
     font-family:Arial, sans-serif;
     line-height:1.6;
     color:#0f0e0e;
 }
-
-/* Navbar */
-
 nav{
     display:flex;
     justify-content:space-between;
@@ -28,37 +22,29 @@ nav{
 .logo h2{
     color:white;
 }
-
 nav ul{
     display:flex;
     list-style:none;
 }
-
 nav ul li{
     margin:0 15px;
 }
-
 nav ul li a{
     text-decoration:none;
     color:gray;
-    font-weight: Arial, sans-serif;
+    font-weight: 500;
 }
-
 nav button{
-    background:#48149c;
+    background: #1D4ED8;
     color:white;
     border:none;
     padding:10px 30px;
     border-radius:6px;
     cursor:pointer;
 }
-
 nav button:hover{
-    background:#5b21b6;
+    background:#1D4ED8;
 }
-
-/* Hero */
-
 .hero{
     height:600px;
     background:
@@ -66,22 +52,18 @@ nav button:hover{
         url("assets/banner.jpg");
     background-size:cover;
     background-position:center;
-
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
 }
-
 .hero-content{
     color:white;
 }
-
 .hero h1{
     font-size:60px;
     margin-bottom:20px;
 }
-
 .hero p{
     width:700px;
     max-width:90%;
@@ -89,10 +71,9 @@ nav button:hover{
     margin-bottom:30px;
     font-size:18px;
 }
-
 .hero button{
     padding:15px 35px;
-    background:#3d1085;
+    background:#1D4ED8;
     color:white;
     border:none;
     border-radius:6px;
@@ -100,26 +81,20 @@ nav button:hover{
     font-size:16px;
     transform:translateY(115px);
 }
-
-/* Speakers */
-
 .speakers{
     padding:80px;
     text-align:center;
 }
-
 .speakers h2{
     margin-bottom:40px;
     font-size:36px;
 }
-
 .speaker-grid{
     display:grid;
     grid-template-columns:repeat(2, minmax(0, 644px));
     gap:30px;
     justify-content:center;
 }
-
 .speaker-card{
     width:100%;
     height:420px;
@@ -136,33 +111,24 @@ nav button:hover{
 
     
 }
-
-
-.card img{
+.speaker-card img{
     width:100%;
     height:250px;
     object-fit:cover;
     border-radius:10px;
 }
-
 .speaker-card small{
     color:#2563EB;
-    font-weight:"inter",Bold;
+   
+    font-family: "inter",Bold;
+    font-weight:700;
     display:block;
     margin-top:15px;
 }
-
-.card h3{
+.speaker-card h3{
     margin:10px 0;
   
 }
-
-
-
-
-
-
-
 .pricing{
     padding:40px 80px 70px;
     text-align:center;
@@ -171,28 +137,20 @@ nav button:hover{
 .pricing h2{
     font-size:48px;
     margin-bottom:10px;
+    color: #0D1B2A;
 }
-
 .pricing p{
     margin-bottom:35px;
     color:rgb(82, 81, 81);
 }
-
-
 .pricing-grid{
     display:flex;
     justify-content:center;
     gap:25px;
 }
-
-
-/* 3 ta card same size */
-
 .plan{
     width:310px;
 }
-
-
 .card{
     height:450px;
     padding:25px;
@@ -203,30 +161,18 @@ nav button:hover{
     display:flex;
     flex-direction:column;
 }
-
-
-/* Middle card navy blue */
-
 .plan:nth-child(2) .card{
 
     background: #0D1B2A;
     color: white;
     border: none;
 }
-
-
-/* Middle card text white */
-
 .plan:nth-child(2) .card span,
 .plan:nth-child(2) .card h3,
 .plan:nth-child(2) .card p,
 .plan:nth-child(2) .card li{
     color:white;
 }
-
-
-/* Buttons */
-
 .card button{
     width:100%;
     height:42px;
@@ -237,10 +183,6 @@ nav button:hover{
     border-radius:6px;
     font-family: "inter",Bold;
 }
-
-
-/* Middle button */
-
 .plan:nth-child(2) .card button{
     background:#2563eb;
     color:white;
@@ -254,133 +196,175 @@ nav button:hover{
     
 }
 .schedule{
+
     padding:80px;
+    background:#0F172A;
     text-align:center;
-    background:#f8f9fa;
+
 }
-
-
 .schedule h2{
+
     font-size:36px;
-    color:#0D1B2A;
+    color:white;
+
 }
-
-
 .schedule > p{
-    margin:15px 0 40px;
-    color:#555;
+
+    color:#CBD5E1;
+    margin:15px 0 50px;
+
 }
+.schedule-wrapper{
 
-
-.schedule-grid{
     display:flex;
     justify-content:center;
-    gap:30px;
+    gap:35px;
+
 }
+.schedule-day{
 
+    width:330px;
+    padding:35px;
 
-.schedule-card{
+    border-top:5px solid #2563EB;
 
-    width:320px;
-    padding:30px;
-    background:white;
-    border-radius:12px;
-    box-shadow:0 0 15px rgba(0,0,0,.15);
+    background:#FFFFFF;
+
     text-align:left;
 
+    border-radius:12px;
+
 }
+.schedule-day h3{
 
-
-.schedule-card h3{
     font-size:28px;
-    color:#0D1B2A;
+    color:#0F172A;
+
 }
+.schedule-day span{
 
+    color:#2563EB;
+    font-weight:600;
 
-.schedule-card span{
-    color:#1D4ED8;
-    font-weight:bold;
 }
+.schedule-day div{
 
-
-.schedule-card h4{
     margin-top:25px;
-}
+    padding-bottom:15px;
 
+    border-bottom:1px solid #E2E8F0;
 
-.schedule-card p{
-    color:#666;
-}
-
-
-.schedule-card.featured{
-
-    background:#0D1B2A;
-    color:white;
+    color:#475569;
 
 }
+.schedule-day b{
 
+    display:block;
+    color:#0F172A;
+    margin-bottom:5px;
 
-.schedule-card.featured h3{
-    color:white;
-}
-
-
-.schedule-card.featured p{
-    color:#ddd;
 }
 footer{
-    background:#0D1B2A;
-    color:white;
+    background:rgb(247,243,243);
+    color:#4E4D4D;
     padding:40px 80px 20px;
     text-align:center;
 }
-
 .footer-top{
     display:flex;
     justify-content:space-between;
-    align-items:center;
+    align-items:flex-start;
+    gap:40px;
 }
-
 .brand{
     display:flex;
     align-items:center;
     gap:15px;
 }
-
 .brand img{
     width:45px;
     height:45px;
 }
-
 .brand h2{
     font-size:24px;
-    color:white;
+    color:#4E4D4D;
 }
-
+.footer-links,
+.footer-contact{
+    text-align:left;
+}
+.footer-links h3,
+.footer-contact h3,
+.social h3{
+    color:#0D1B2A;
+    font-size:18px;
+    margin-bottom:18px;
+    font-weight:600;
+}
+.footer-links ul,
+.footer-contact ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+.footer-links li,
+.footer-contact li{
+    color:#64748B;
+    margin-bottom:12px;
+    font-size:15px;
+}
+.footer-links a{
+    text-decoration:none;
+    color:#64748B;
+    transition:.3s;
+}
+.footer-links a:hover{
+    color:#1D4ED8;
+    padding-left:5px;
+}
 .social{
-    display:flex;
-    gap:20px;
+     display:flex;
+     align-items:center;
+     gap:15px;
+     text-align:left;
+    white-space:nowrap;
 }
-
+.social h3{
+    margin:0;
+    white-space:nowrap;
+    font-size:18px;
+}
 .social a{
-    color:white;
-    font-size:22px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:38px;
+    height:38px;
+    color:#4E4D4D;
+    font-size:20px;
+    border:1px solid #ddd;
+    border-radius:50%;
     transition:.3s;
 }
 
 .social a:hover{
     color:#1D4ED8;
+    border-color:#1D4ED8;
+    transform:translateY(-3px);
 }
 
 footer hr{
-    margin:30px 0 20px;
+    margin:35px 0 20px;
     border:0;
-    border-top:1px solid rgba(255,255,255,.2);
+    border-top:1px solid #ddd;
 }
 
 footer p{
-    color:#4E4D4D;
+    color:#64748B;
     font-size:15px;
     margin:0;
+}
+.footer-contact li{
+    max-width:260px;
+    line-height:1.6;
 }
