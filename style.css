@@ -4,7 +4,6 @@ body{
 *{
     margin:0;
     padding:0;
-    box-sizing:border-box;
 }
 body{
     font-family:Arial, sans-serif;
@@ -84,11 +83,16 @@ nav button:hover{
 .speakers{
     padding:80px;
     text-align:center;
+    font-family:"Inter";
 }
 .speakers h2{
     margin-bottom:40px;
     font-size:36px;
+    font-family:'Inter', sans-serif;
+    font-weight:800;
 }
+    
+
 .speaker-grid{
     display:grid;
     grid-template-columns:repeat(2, minmax(0, 644px));
@@ -106,10 +110,7 @@ nav button:hover{
     display:flex;
     flex-direction:column;
     text-align:left; 
-    overflow:hidden;
-    
-
-    
+    overflow:hidden; 
 }
 .speaker-card img{
     width:100%;
@@ -120,10 +121,15 @@ nav button:hover{
 .speaker-card small{
     color:#2563EB;
    
-    font-family: "inter",Bold;
-    font-weight:700;
+    font-family: 'inter';
+    font-weight:600;
     display:block;
     margin-top:15px;
+}
+.speaker-card p{
+    font-family:'inter';
+    font-weight:400;
+    color:#575756;
 }
 .speaker-card h3{
     margin:10px 0;
@@ -132,16 +138,20 @@ nav button:hover{
 .pricing{
     padding:40px 80px 70px;
     text-align:center;
-    font-family:'Inter', sans-serif;
+    font-family:'inter', sans-serif;
 }
 .pricing h2{
     font-size:48px;
     margin-bottom:10px;
     color: #0D1B2A;
+    font-family:'inter', sans-serif;
+    font-weight:800;
 }
 .pricing p{
     margin-bottom:35px;
     color:rgb(82, 81, 81);
+    font-family:'Inter', sans-serif;
+    font-weight:600;
 }
 .pricing-grid{
     display:flex;
@@ -151,8 +161,9 @@ nav button:hover{
 .plan{
     width:310px;
 }
+
 .card{
-    height:450px;
+    height:380px;
     padding:25px;
     background:white;
     border:1px solid #e5e7eb;
@@ -160,41 +171,72 @@ nav button:hover{
     text-align:left;
     display:flex;
     flex-direction:column;
+    font-family:'Inter', sans-serif;
 }
-.plan:nth-child(2) .card{
-
-    background: #0D1B2A;
-    color: white;
-    border: none;
+.card p{
+    color:#6B7280;
+    padding-bottom:15px;
+    margin-bottom:20px;
+    border-bottom:1px solid #E5E7EB;
+    font-family:'Inter', sans-serif;
 }
-.plan:nth-child(2) .card span,
-.plan:nth-child(2) .card h3,
-.plan:nth-child(2) .card p,
-.plan:nth-child(2) .card li{
+.featured .card{
+    background:#0D1B2A;
+    color:white;
+    border:none;
+}
+.card h1,
+.card p,
+.card li{
+    color:#333333;
+}.card h3{
+    color:#888888;
+}
+.featured .card h1,
+.featured .card h3,
+.featured .card p,
+.featured .card li,
+.featured .card span{
+    color:#888888;
+}
+.featured .card h3{
+    color:#93c5fd;
+}
+.featured .card h1{
     color:white;
 }
+.plan:last-child .card button{
+    background:white;
+    color:#888888;
+    border:1px solid #888888;
+    font-family:'Inter', sans-serif;
+    font-weight:600;
+}
+
 .card button{
     width:100%;
     height:42px;
     margin-top:auto;
     background:white;
-    color:#2563eb;
-    border:1px solid #2563eb;
+    color:#2563EB;
+    border:1px solid #2563EB;
     border-radius:6px;
-    font-family: "inter",Bold;
+}.card h1{
+    color:black;
+    font-family:'Inter', sans-serif;
+    font-weight:800;
 }
-.plan:nth-child(2) .card button{
-    background:#2563eb;
+.card h3{
+    font-family:'Inter', sans-serif;
+    font-weight:800;
+}
+
+.featured .card button{
+    background:#2563EB;
     color:white;
     border:none;
 }
-.plan:nth-child(3) .card button{
-    background:white;
-    color:#0D1B2A;
-    border:1px solid #0D1B2A;
-    font-family:'Inter', Bold;
-    
-}
+
 .schedule{
 
     padding:80px;
@@ -208,7 +250,7 @@ nav button:hover{
     color:white;
 
 }
-.schedule > p{
+.schedule p{
 
     color:#CBD5E1;
     margin:15px 0 50px;
@@ -309,13 +351,13 @@ footer{
 }
 .footer-links li,
 .footer-contact li{
-    color:#64748B;
+    color:#333333;
     margin-bottom:12px;
     font-size:15px;
 }
 .footer-links a{
     text-decoration:none;
-    color:#64748B;
+    color:#333333;
     transition:.3s;
 }
 .footer-links a:hover{
@@ -340,7 +382,7 @@ footer{
     justify-content:center;
     width:38px;
     height:38px;
-    color:#4E4D4D;
+    color:#333333;
     font-size:20px;
     border:1px solid #ddd;
     border-radius:50%;
@@ -360,7 +402,7 @@ footer hr{
 }
 
 footer p{
-    color:#64748B;
+    color:#333333;
     font-size:15px;
     margin:0;
 }
