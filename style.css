@@ -1,108 +1,386 @@
 body{
     background-color: white;
 }
-header {
-    width: 1551px;
-    height: 98px;
+   /* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-button {
-    width: 188px;
-    height: 48px;
-    background-color: #1D4ED8;
-    color: #FFFFFF;
-    border: none;
-    bordar-radius: 19px; 
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
+body{
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+    color:#0f0e0e;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* Navbar */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:white;
 }
 
-nav img {
-    width: 120px;
+.logo h2{
+    color:white;
 }
 
-ul {
-    display: flex;
-    gap: 35px;
-    list-style: none;
-    margin: 0 auto;   
-}
-ul li a {
-    text-decoration: none;
-    color:rgb(87, 87, 87)
-}
-.logo {
-    width: 134px;
-    height: 44px;
-    font-size: 22px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
+nav ul{
+    display:flex;
+    list-style:none;
 }
 
-.hero {
-    width: 1551px;
-    height: 786px;
-
-    background-image: url("./assets/banner.jpg");
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+nav ul li{
+    margin:0 15px;
 }
 
-.hero-content {
-    text-align: center;
-    color: #FFFFFF;
+nav ul li a{
+    text-decoration:none;
+    color:gray;
+    font-weight: Arial, sans-serif;
+}
+
+nav button{
+    background:#48149c;
+    color:white;
+    border:none;
+    padding:10px 30px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+nav button:hover{
+    background:#5b21b6;
+}
+
+/* Hero */
+
+.hero{
+    height:600px;
+    background:
+        linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+        url("assets/banner.jpg");
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    width:700px;
+    max-width:90%;
+    margin:auto;
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+.hero button{
+    padding:15px 35px;
+    background:#3d1085;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+    transform:translateY(115px);
+}
+
+/* Speakers */
+
+.speakers{
+    padding:80px;
+    text-align:center;
+}
+
+.speakers h2{
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+.speaker-grid{
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0, 644px));
+    gap:30px;
+    justify-content:center;
+}
+
+.speaker-card{
+    width:100%;
+    height:420px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+    padding:20px;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    text-align:left; 
+    overflow:hidden;
+    
+
     
 }
 
-.hero-content h1 {
-    font-size: 70px;
-    font-weight: 959;
-    line-height: 95px;
-    font-family: "Inter";
-    margin-bottom: 25px;
-    transform: translateY(-200px);
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
 }
 
-.hero-content p {
-    position: absolute;
-    
+.speaker-card small{
+    color:#2563EB;
+    font-weight:"inter",Bold;
+    display:block;
+    margin-top:15px;
+}
 
-    width: 829px;
-    font-size: 27px;
-    line-height: 108px;
-    font-family: "Inter";
-    margin: 0 auto 30px;
-    line-height: 1.5;
-    transform: translateY(-215px);
+.card h3{
+    margin:10px 0;
+  
 }
 
 
 
-.hero-content button {
-    width: 282px;
-    height: 74px;
-    background-color: #1D4ED8;
-    color: #FFFFFF;
 
+
+
+
+.pricing{
+    padding:40px 80px 70px;
+    text-align:center;
+    font-family:'Inter', sans-serif;
+}
+.pricing h2{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.pricing p{
+    margin-bottom:35px;
+    color:rgb(82, 81, 81);
+}
+
+
+.pricing-grid{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+}
+
+
+/* 3 ta card same size */
+
+.plan{
+    width:310px;
+}
+
+
+.card{
+    height:450px;
+    padding:25px;
+    background:white;
+    border:1px solid #e5e7eb;
+    border-radius:8px;
+    text-align:left;
+    display:flex;
+    flex-direction:column;
+}
+
+
+/* Middle card navy blue */
+
+.plan:nth-child(2) .card{
+
+    background: #0D1B2A;
+    color: white;
     border: none;
-    border-radius: 8px;
+}
 
-    font-family: "Inter", sans-serif;
 
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
-    transform: translateY(202px);
+/* Middle card text white */
+
+.plan:nth-child(2) .card span,
+.plan:nth-child(2) .card h3,
+.plan:nth-child(2) .card p,
+.plan:nth-child(2) .card li{
+    color:white;
+}
+
+
+/* Buttons */
+
+.card button{
+    width:100%;
+    height:42px;
+    margin-top:auto;
+    background:white;
+    color:#2563eb;
+    border:1px solid #2563eb;
+    border-radius:6px;
+    font-family: "inter",Bold;
+}
+
+
+/* Middle button */
+
+.plan:nth-child(2) .card button{
+    background:#2563eb;
+    color:white;
+    border:none;
+}
+.plan:nth-child(3) .card button{
+    background:white;
+    color:#0D1B2A;
+    border:1px solid #0D1B2A;
+    font-family:'Inter', Bold;
+    
+}
+.schedule{
+    padding:80px;
+    text-align:center;
+    background:#f8f9fa;
+}
+
+
+.schedule h2{
+    font-size:36px;
+    color:#0D1B2A;
+}
+
+
+.schedule > p{
+    margin:15px 0 40px;
+    color:#555;
+}
+
+
+.schedule-grid{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+
+.schedule-card{
+
+    width:320px;
+    padding:30px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+    text-align:left;
+
+}
+
+
+.schedule-card h3{
+    font-size:28px;
+    color:#0D1B2A;
+}
+
+
+.schedule-card span{
+    color:#1D4ED8;
+    font-weight:bold;
+}
+
+
+.schedule-card h4{
+    margin-top:25px;
+}
+
+
+.schedule-card p{
+    color:#666;
+}
+
+
+.schedule-card.featured{
+
+    background:#0D1B2A;
+    color:white;
+
+}
+
+
+.schedule-card.featured h3{
+    color:white;
+}
+
+
+.schedule-card.featured p{
+    color:#ddd;
+}
+footer{
+    background:#0D1B2A;
+    color:white;
+    padding:40px 80px 20px;
+    text-align:center;
+}
+
+.footer-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.brand img{
+    width:45px;
+    height:45px;
+}
+
+.brand h2{
+    font-size:24px;
+    color:white;
+}
+
+.social{
+    display:flex;
+    gap:20px;
+}
+
+.social a{
+    color:white;
+    font-size:22px;
+    transition:.3s;
+}
+
+.social a:hover{
+    color:#1D4ED8;
+}
+
+footer hr{
+    margin:30px 0 20px;
+    border:0;
+    border-top:1px solid rgba(255,255,255,.2);
+}
+
+footer p{
+    color:#4E4D4D;
+    font-size:15px;
+    margin:0;
 }
